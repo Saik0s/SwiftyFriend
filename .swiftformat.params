@@ -1,0 +1,31 @@
+--exclude
+Configs/,
+DerivedData/,
+Tests/,
+.idea/,
+.build/,
+Package.swift
+--allman false
+--binarygrouping ignore
+--commas inline
+--comments indent
+--decimalgrouping ignore
+--empty void
+--exponentcase lowercase
+--header ignore
+--hexgrouping none
+--hexliteralcase uppercase
+--ifdef noindent
+--indent 4
+--insertlines enabled
+--linebreaks lf
+--octalgrouping ignore
+--patternlet hoist
+--ranges spaced
+--removelines enabled
+--semicolons never
+--self remove
+--stripunusedargs closure-only
+--trimwhitespace always
+--wraparguments beforefirst
+--wrapelements beforefirst
