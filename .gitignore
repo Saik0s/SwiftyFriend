@@ -4,3 +4,9 @@
 /.idea
 /.buckd
 /buck-out
+
+/DerivedData/**/*
+
+/SwiftyFriend
+xcuserdata
+xcode-test-results-Recipes.html
