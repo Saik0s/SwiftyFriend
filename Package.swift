@@ -10,9 +10,9 @@ let package = Package(
         .executable(name: "swifty-friend", targets: ["SwiftyFriend"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Carthage/Commandant.git", from: "0.13.0"),
-        .package(url: "https://github.com/Quick/Quick.git", from: "1.2.0"),
-        .package(url: "https://github.com/Quick/Nimble.git", from: "7.0.3"),
+        .package(url: "https://github.com/apple/swift-package-manager.git", from: "0.1.0"),
+        // .package(url: "https://github.com/Quick/Quick.git", from: "1.2.0"),
+        // .package(url: "https://github.com/Quick/Nimble.git", from: "7.0.3"),
     ],
     targets: [
         .target(
@@ -21,11 +21,11 @@ let package = Package(
         ),
         .testTarget(
             name: "SwiftyFriendKitTests",
-            dependencies: ["SwiftyFriendKit", "Quick", "Nimble"]
+            dependencies: ["SwiftyFriendKit"]//, "Quick", "Nimble"]
         ),
         .target(
             name: "SwiftyFriend",
-            dependencies: []
+            dependencies: ["SwiftyFriendKit", "Utility"]
         ),
     ],
     swiftLanguageVersions: [4]
